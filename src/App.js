@@ -1,7 +1,7 @@
 import face1 from "./face1.png";
 import styles from "./App.module.css";
 import NavBar from "./components/navBar/navBar";
-import ricon from "./ricon.png";
+import rIcon from "./rIcon.png";
 import pcmarkt from "./pcmarkt.png";
 import pcmarktmobile from "./pcmarktmobile.png";
 
