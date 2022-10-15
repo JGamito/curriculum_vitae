@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.navBar {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-right: 20px;
+}
+.a {
+  display: inline-block;
+  position: relative;
+  color: #bac8d6;
+  letter-spacing: 2.5px;
+  font-style: normal;
+  cursor: pointer;
+  border: none;
+  border-radius: 0px 10px 0px 5px;
+  box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.3);
+  background-color: #21262d;
+  padding: 5px;
+}
+.a:hover {
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgb(53, 14, 225);
+  color: rgba(212, 202, 202, 0.5);
+}
+.a:after {
+  color: rgba(64, 55, 55, 0.5);
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  transform-origin: bottom left;
+  transition: transform 0.2s ease-out;
+}
+.a:hover:after {
+  opacity: 1;
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}

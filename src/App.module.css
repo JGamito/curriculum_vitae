@@ -1,0 +1,128 @@
+.body {
+  overflow: scroll;
+}
+
+.photo {
+  width: 25%;
+  height: 25%;
+  border-radius: 6000px;
+  margin-bottom: 10px;
+}
+.photo:hover {
+  border-radius: 6000px;
+  box-shadow: 0px 10px 30px 0px rgba(240, 237, 237, 0.5);
+  transition: opacity 0.2s ease, box-shadow 0.2s ease;
+  opacity: 1;
+}
+.divPhoto {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.saludo {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: inherit;
+  margin-left: inherit;
+  cursor: default;
+}
+.saludo:hover {
+  -webkit-animation-name: wiggle;
+  -ms-animation-name: wiggle;
+  -ms-animation-duration: 1000ms;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(10deg);
+  }
+  25% {
+    -webkit-transform: rotate(-10deg);
+  }
+  50% {
+    -webkit-transform: rotate(20deg);
+  }
+  75% {
+    -webkit-transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-ms-keyframes wiggle {
+  0% {
+    -ms-transform: rotate(1deg);
+  }
+  25% {
+    -ms-transform: rotate(-1deg);
+  }
+  50% {
+    -ms-transform: rotate(1.5deg);
+  }
+  75% {
+    -ms-transform: rotate(-5deg);
+  }
+  100% {
+    -ms-transform: rotate(0deg);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.h6 {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #bac8d6;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+.react {
+  width: 5%;
+  height: 5%;
+}
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.pcmarkt {
+  width: 50%;
+  height: 50%;
+  border: solid rgba(240, 237, 237, 0.5);
+}
+.pcmarktmobile {
+  width: 30%;
+  height: 30%;
+}
+.projectsphoto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
